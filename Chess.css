@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    margin-top: 16px;
+    
+}
+
+.all {
+    background-color: #050505;
+    color: #ffffff;
+    
+}
+
+/*First section styling*/
+
+.top {
+    
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 5px;
+    
+
+}
+
+h1 {
+    color: rgb(0, 255, 21);
+}
+
+.fa-solid {
+    color: #416edf;
+    font-size: 2em;
+}
+
+.fa-regular {
+    font-size: 2em;
+}
+
+.fa-regular:active {
+    color: #00158d;
+}
+  
+
+/* Chessboard styling*/
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*#EDEDED   #3BAACF*/
+}
+
+
+
+.divv {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+}
+
+.box {
+    margin: .5px;
+    width: 75px; 
+    height: 75px;
+}
+
+#tog {
+    margin: 0px 0px;
+}
+
+
+
+.allimg {
+    width: 45px;
+    position: relative;
+    bottom: 5px;
+}
+
+.allpawn {
+    transform: scale(.7);
+}
+
+/*.authcont {
+    width: 100vw;
+    height: 100vh;
+}
+
+.author {
+    float: right;
+    margin-right: 50px;
+
+}*/
+
+
+@media (max-width:650px){
+    
+    .top {
+        flex-direction: column;
+        gap: 0em;
+        align-items: center;
+    }
+
+    #tog {
+        margin-bottom: 20px;
+
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .allimg {
+        width: 7vw;
+        
+    }
+
+    .fa-regular {
+        margin-bottom: 0.5em;
+    }
+}
