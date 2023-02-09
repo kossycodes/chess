@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,12 @@ body {
     place-items: center;
     overflow-x: hidden;
     margin-top: 16px;
-    
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .all {
@@ -31,6 +38,7 @@ body {
 
 h1 {
     color: rgb(0, 255, 21);
+    font-size: 1.5em;
 }
 
 .fa-solid {
@@ -76,6 +84,7 @@ li {
 
 #tog {
     margin: 0px 0px;
+    font-size: 1.2em;
 }
 
 
@@ -88,6 +97,18 @@ li {
 
 .allpawn {
     transform: scale(.7);
+}
+
+.live-link {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    
 }
 
 /*.authcont {
@@ -112,7 +133,7 @@ li {
 
     #tog {
         margin-bottom: 20px;
-
+        font-size: large;
     }
 
     .box {
@@ -128,4 +149,6 @@ li {
     .fa-regular {
         margin-bottom: 0.5em;
     }
+
+    
 }
